@@ -35,7 +35,7 @@
 	<%@ include file="../common/menubar.jsp" %>
 	<div class="outer">
 		<br>
-		<h2 align="center">공지사항 상세보기</h2>
+		<h2 align="center">공지사항 상세보기</h2><!--zx  -->
 		<div class="tableArea">
 			<!-- noticeInsertForm.jsp에서 table 부분 복사해와서 value값 적용하기-->
 			<table>
