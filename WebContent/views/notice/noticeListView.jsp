@@ -16,6 +16,7 @@
 		margin-left:auto;
 		margin-right:auto;
 		margin-top:50px;
+		opacity : 0.5;
 	}
 	table {
 		border:1px solid white;
@@ -98,9 +99,34 @@
 			<button onclick="location.href='<%= request.getContextPath() %>/insertForm.no'">글쓰기 </button>
 		<% } %>
 		
+		</div>
 	</div>
-
-	</div>
-
+	<script>
+		// 공지사항 상세보기	 onload
+		$(function(){
+			
+			$("#listArea td").mouseenter(function(){
+				$(this).parent().css({"background" : "darkgrey",
+									  "cursor" : "pointer"		
+									});
+				
+			}).mouseout(function(){
+				$(this).parent().css("background", "black");
+			}).click(function(){
+				var num = $(this).parent().children().eq(0).text();
+				// Get 방식의 쿼리스트링을 이용하여 글 번호 전달
+				location.href="<%= request.getContextPath()%>/detail.no?nno="+num;
+			});
+		});
+	
+	
+	
+	</script>
+	
+	
+	
+	
+	
+	
 </body>
 </html>

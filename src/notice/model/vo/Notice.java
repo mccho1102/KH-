@@ -14,10 +14,11 @@ public class Notice {
 	
 	public Notice() {}
 	
-	public Notice(String nTitle, String nWriter, Date nDate, String nContent) {
+	
+	
+	public Notice(String nTitle, String nWriter, String nContent) {
 		this.nTitle = nTitle;
 		this.nWriter = nWriter;
-		this.nDate = nDate;
 		this.nContent = nContent;
 	}
 	

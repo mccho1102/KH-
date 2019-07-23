@@ -104,6 +104,7 @@
 		background:black;
 		width:100%;
 		height:50px;
+		opacity : 0.5;
 	}
 	.menu {
 		background:black;
@@ -113,6 +114,7 @@
 		width:150px;
 		height:50px;
 		display:table-cell;
+		
 	}
 	.nav {
 		width:600px;
